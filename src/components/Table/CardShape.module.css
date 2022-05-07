@@ -1,0 +1,179 @@
+.main-card-container{
+    background-color: white;
+    margin: 0;
+    box-sizing: border-box;
+    border: 0.1rem solid black;
+    padding: 0.5rem;
+    height: 15rem;
+    width: 12rem;
+    position: relative;
+    border-radius: 15px;
+}
+
+.main-card-container__inner{
+    border: 0.4rem solid black;
+    box-sizing: border-box;
+    height: 100%;
+   
+    width: 100%;
+    margin: auto;
+    border-radius: 15px;
+    background-image: url("../../pics/Card-background.png") ;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.cardVP{
+    font-size: 1.3rem;
+    position: absolute;
+    left: 0.9rem;
+    bottom: calc(50% - 2.5rem);
+    height: 3rem;
+    width: 1.5rem;
+    border: solid 0.3rem black;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-left: none;
+    background-color: white;
+    border-radius: 100% / 50%;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  font-weight: 900;
+  padding-top: 0.2rem;
+  /* padding-left: 1px; */
+  text-align: start;
+  box-sizing: border-box;
+}
+.cardContent{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    max-height: 100%;
+    font-family: cursive;
+    font-style: italic;
+  
+
+}
+
+.cardReq{
+    font-size: 0.8rem;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.cardTitle{
+    margin-top: -0.2rem;
+    padding-bottom: 0.8rem;
+}
+.cardPicture{
+    flex-grow: 5;
+        width: 65%;
+        margin: 5% 20%;
+       align-self: center;
+}
+
+.cardDescription{
+    font-size: 0.55rem;
+    margin-left: 9%;
+    margin-right: 9%;
+    padding: 2px;;
+    background-color: white;
+    border-radius: 12px;
+
+}
+
+.cardColors{
+    font-size: 0.4rem;
+    text-align: left;
+    padding-left: 0.5rem;
+    font-family: inherit;
+    
+}
+.emptyColorProp{
+    visibility: hidden;
+}
+.emptyProp{
+    display: none;
+}
+
+@media only screen and (max-width: 1550px) {
+    
+    .main-card-container{
+       
+        padding: 0.4rem;
+        height: calc(0.95 * 15rem);
+        width: calc(0.95 * 12rem);
+        
+    }
+    
+    .main-card-container__inner{
+        border: 0.3rem solid black;
+        
+    }
+    .cardVP{
+        left: 0.7rem;}
+        
+    .cardReq{
+        font-size: calc(0.95 * 0.8rem);
+        min-height: 12%;
+        margin-bottom: 0.2rem;
+    }
+    
+    .cardTitle{
+        padding-bottom: 0.6rem;
+    }
+    
+    
+    .cardDescription{
+        font-size: 0.5rem ;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding: 2px;
+        background-color: white;
+        border-radius: 12px;
+        line-height: 0.5rem;
+        margin-top: -1rem;;
+    
+    }
+    
+    .cardColors{
+        font-size: 0.4rem;
+        text-align: left;
+        padding-left: 0.5rem;
+        font-family: inherit;
+
+  }
+}
+
+
+.type__cat, .type__straggler{
+    background-color: #f6c384;
+}
+.type__toy{
+    background-color:#ebc8eb;
+}
+.type__clothes{
+    background-color: lemonchiffon;
+}
+.type__water, .type__catMint{
+    background-color: #abccab;
+}
+.type__wanted{
+    background-color: tan;
+}
+.type__milk{
+    background-color: white;
+}
+.type__drumstick{
+    background-color: #f5a38c;
+}
+.type__tuna{
+    background-color: lightsteelblue;
+}
+.type__rarytas{
+    background-image: url("../../pics/Card-background.png"), linear-gradient(to right, #f5a38c, white, lightsteelblue) ;
+}
+
+.NoVisible{
+    visibility: hidden;
+}

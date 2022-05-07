@@ -1,0 +1,33 @@
+.rightSide--main{
+   position: fixed; 
+   right: 0;
+   border-left: solid 2px black;
+   height: 100%;
+   width: 20%;
+   display: grid;
+   grid-template-rows: calc(50% - 1px) 2px calc(50% - 1px);
+}
+
+@media only screen and (max-width: 1550px) {
+    .rightSide--main {
+        width: 15%;
+    }
+}
+
+.rightSide--main__chat{
+    background-color: rgba(253, 213, 189, 0.5);
+   
+}
+
+.rightSide--main__logs{
+    background-color: rgba(253, 190, 173, 0.5);
+    
+}
+
+.resize{
+    cursor: n-resize;
+    height: 2px;
+    background-color: black;
+    
+    
+}
